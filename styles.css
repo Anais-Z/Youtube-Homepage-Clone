@@ -1,3 +1,21 @@
+html, body{
+    height: 100%;
+}
+
+.container{
+    display: grid;   
+    grid-template-columns: 150px 1fr 1fr 1fr;
+    grid-template-areas:
+    "header header header header"
+    "sidebar main main main"
+    "sidebar main main main"
+    "sidebar main main main"
+    "sidebar main main main"
+    "sidebar footer footer footer"
+    "sidebar footer footer footer"
+    
+}
+
 img{
     width: 24px;
     height: 24px;
@@ -6,4 +24,57 @@ img{
 .youtubeLogo{
     width: 100px;
     height: 24px;
+}
+
+header{
+    grid-area: header;
+    height: 60px;
+    display: grid;
+    grid-template-columns: 200px 1fr 350px;
+}
+
+.header-item1{
+    padding-top: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-self: flex-start;
+}
+
+.mic{
+    padding-top: 2mm
+
+}
+
+button{
+    height: 36px;
+}
+
+input{
+    height: 30px;
+    width: 500px;
+}
+
+.header-item2{
+    display: flex;
+    justify-content: center;
+}
+
+.header-item3{
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-self: flex-end;
+    float: right;
+}
+
+.item-main{
+    grid-area: main
+}
+
+.item-sidebar{
+    grid-area: sidebar
+}
+
+footer{
+    grid-area: footer;
 }
