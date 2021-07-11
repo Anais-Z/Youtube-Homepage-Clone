@@ -154,3 +154,14 @@ font-weight: bold;
 .channel-margin{
     margin-right: 165px;
 }
+.footer-items{
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.footer-items img{
+    height: 190px;
+    width: 150px;
+}
