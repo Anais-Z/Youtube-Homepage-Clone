@@ -71,10 +71,86 @@ input{
     grid-area: main
 }
 
+main{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+}
+
 .item-sidebar{
     grid-area: sidebar
 }
 
 footer{
     grid-area: footer;
+}
+
+main div{
+    position: relative;
+}
+
+
+main > div > img{
+    height: 180px;
+    width: 260px;
+    position: relative;
+}
+
+
+.first-p{
+   background-color: rgb(3, 2, 2);
+   color: white;
+}
+
+
+.video-time{
+   position: absolute;
+   left: 231px;
+   top: 146px;
+}
+
+.item-sidebar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.video-description{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.video-title{
+font-weight: bold;
+}
+
+.channel{
+    position: absolute;
+    top:16px; 
+    font-size: 14px;
+}
+
+.views-date{
+    position: absolute;
+    top:28px; 
+    font-size: 14px;
+}
+
+.channel-icon{
+    position: absolute;
+    left: 2px;
+    height: 40px;
+    width: 50px;
+    
+}
+
+.desc-margin{
+    margin-right: 80px;
+}
+
+.channel-margin{
+    margin-right: 165px;
 }
